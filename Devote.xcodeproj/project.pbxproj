@@ -17,6 +17,7 @@
 		8192B5432B93202400AF987D /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8192B5402B93202400AF987D /* sound-tap.mp3 */; };
 		8192B5442B93202400AF987D /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8192B5412B93202400AF987D /* sound-rise.mp3 */; };
 		8192B5512B93771000AF987D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B5502B93771000AF987D /* Constants.swift */; };
+		8192B5532B93A48C00AF987D /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B5522B93A48C00AF987D /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8192B5412B93202400AF987D /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		8192B54B2B9320D500AF987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8192B5502B93771000AF987D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8192B5522B93A48C00AF987D /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		8192B5452B93202F00AF987D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8192B5522B93A48C00AF987D /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				8192B5512B93771000AF987D /* Constants.swift in Sources */,
 				8192B5362B931FA000AF987D /* Persistence.swift in Sources */,
+				8192B5532B93A48C00AF987D /* HideKeyboardExtension.swift in Sources */,
 				8192B52F2B931F9800AF987D /* ContentView.swift in Sources */,
 				8192B5392B931FA000AF987D /* Devote.xcdatamodeld in Sources */,
 				8192B52D2B931F9800AF987D /* DevoteApp.swift in Sources */,
