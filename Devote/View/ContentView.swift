@@ -12,6 +12,7 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     @State var task: String = ""
     @State private var showNewTaskItem: Bool = false
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
  
     //MARK: - FETCHING DATA
     @Environment(\.managedObjectContext) private var viewContext
@@ -44,6 +45,39 @@ struct ContentView: View {
                 //MARK: - MAIN VIEW
                 VStack {
                     //MARK: - HEADERR
+                    HStack(spacing: 10){
+                        //Title
+                        Text("Devote")
+                            .font(.system(.largeTitle, design: .rounded))
+                            .fontWeight(.heavy)
+                            .padding(.leading,4)
+                        
+                        Spacer()
+                        //EDITBUTTON
+                        EditButton()
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .padding(.horizontal,10)
+                            .frame(minWidth: 24, maxWidth: 70,   alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .background(
+                                Capsule().stroke(Color.white, lineWidth: 2)
+                            )
+                        //APPPEARENCE BUtton
+                        Button(action: {
+                            isDarkMode.toggle()
+                            //Toggle appearance
+                        }, label: {
+                            Image(systemName: isDarkMode ?  "moon.circle.fill" : "moon.circle")
+                                .resizable()
+                                .frame(width: 24,height: 24)
+                                .font(.system(.title, design: .rounded))
+                        })
+                        
+                        
+                    }//HSTACK
+                    .padding()
+                    .foregroundColor(.white)
+                    
+                    
                     Spacer(minLength: 80)
                     //MARK: - NEW TASK BUTTON
                     
@@ -107,11 +141,12 @@ struct ContentView: View {
             }//ZSTACK
             
             .navigationBarTitle("Daily Task", displayMode: .large)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-            }//TOOLBAR
+            .navigationBarHidden(true)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    EditButton()
+//                }
+           // }//TOOLBAR
             .background(
                 BackgroundImageView()
             )
