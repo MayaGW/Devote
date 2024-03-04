@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		818969A42B95C21600486A72 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818969A32B95C21600486A72 /* BlankView.swift */; };
 		8192B52D2B931F9800AF987D /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B52C2B931F9800AF987D /* DevoteApp.swift */; };
 		8192B52F2B931F9800AF987D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B52E2B931F9800AF987D /* ContentView.swift */; };
 		8192B5312B931FA000AF987D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8192B5302B931FA000AF987D /* Assets.xcassets */; };
@@ -19,9 +20,11 @@
 		8192B5512B93771000AF987D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B5502B93771000AF987D /* Constants.swift */; };
 		8192B5532B93A48C00AF987D /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B5522B93A48C00AF987D /* HideKeyboardExtension.swift */; };
 		8192B5552B93BA0500AF987D /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B5542B93BA0500AF987D /* BackgroundImageView.swift */; };
+		81B31C782B946FDE00CD996D /* NEwTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B31C772B946FDE00CD996D /* NEwTaskItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		818969A32B95C21600486A72 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		8192B5292B931F9800AF987D /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8192B52C2B931F9800AF987D /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		8192B52E2B931F9800AF987D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		8192B5502B93771000AF987D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8192B5522B93A48C00AF987D /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		8192B5542B93BA0500AF987D /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		81B31C772B946FDE00CD996D /* NEwTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEwTaskItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			children = (
 				8192B52E2B931F9800AF987D /* ContentView.swift */,
 				8192B5542B93BA0500AF987D /* BackgroundImageView.swift */,
+				81B31C772B946FDE00CD996D /* NEwTaskItemView.swift */,
+				818969A32B95C21600486A72 /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,9 +224,11 @@
 				8192B5552B93BA0500AF987D /* BackgroundImageView.swift in Sources */,
 				8192B5362B931FA000AF987D /* Persistence.swift in Sources */,
 				8192B5532B93A48C00AF987D /* HideKeyboardExtension.swift in Sources */,
+				818969A42B95C21600486A72 /* BlankView.swift in Sources */,
 				8192B52F2B931F9800AF987D /* ContentView.swift in Sources */,
 				8192B5392B931FA000AF987D /* Devote.xcdatamodeld in Sources */,
 				8192B52D2B931F9800AF987D /* DevoteApp.swift in Sources */,
+				81B31C782B946FDE00CD996D /* NEwTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
